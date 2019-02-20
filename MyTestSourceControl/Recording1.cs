@@ -79,6 +79,38 @@ namespace MyTestSourceControl
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.EnterYourName' at 30;7.", repo.ApplicationUnderTest.RxTabIntroduction.EnterYourNameInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.RxTabIntroduction.EnterYourName.Click("30;7");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'nedeljko' with focus on 'ApplicationUnderTest.RxTabIntroduction.EnterYourName'.", repo.ApplicationUnderTest.RxTabIntroduction.EnterYourNameInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.RxTabIntroduction.EnterYourName.PressKeys("nedeljko");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserName' at 38;15.", repo.ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserNameInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserName.Click("38;15");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.Reset' at 21;11.", repo.ApplicationUnderTest.RxTabIntroduction.ResetInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.RxTabIntroduction.Reset.Click("21;11");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.EnterYourName' at 45;18.", repo.ApplicationUnderTest.RxTabIntroduction.EnterYourNameInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.RxTabIntroduction.EnterYourName.Click("45;18");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ranorex' with focus on 'ApplicationUnderTest.RxTabIntroduction.EnterYourName'.", repo.ApplicationUnderTest.RxTabIntroduction.EnterYourNameInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.RxTabIntroduction.EnterYourName.PressKeys("ranorex");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserName' at 44;14.", repo.ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserNameInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.RxTabIntroduction.BtnSubmitUserName.Click("44;14");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RxTabIntroduction.Reset' at 20;3.", repo.ApplicationUnderTest.RxTabIntroduction.ResetInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.RxTabIntroduction.Reset.Click("20;3");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

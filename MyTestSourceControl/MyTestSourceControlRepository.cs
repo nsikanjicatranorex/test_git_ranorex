@@ -85,6 +85,7 @@ namespace MyTestSourceControl
         [RepositoryFolder("f9f4e0a2-5564-4a48-8acd-5e54cb9321a2")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            MyTestSourceControlRepositoryFolders.RxTabIntroductionFolder _rxtabintroduction;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -92,6 +93,7 @@ namespace MyTestSourceControl
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/form[@processname='RxDemoApp']", parentFolder, 30000, null, true, "f9f4e0a2-5564-4a48-8acd-5e54cb9321a2", "")
             {
+                _rxtabintroduction = new MyTestSourceControlRepositoryFolders.RxTabIntroductionFolder(this);
             }
 
             /// <summary>
@@ -115,6 +117,133 @@ namespace MyTestSourceControl
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RxTabIntroduction folder.
+            /// </summary>
+            [RepositoryFolder("36636520-abe3-4777-8a78-9c1b19b2b1fa")]
+            public virtual MyTestSourceControlRepositoryFolders.RxTabIntroductionFolder RxTabIntroduction
+            {
+                get { return _rxtabintroduction; }
+            }
+        }
+
+        /// <summary>
+        /// The RxTabIntroductionFolder folder.
+        /// </summary>
+        [RepositoryFolder("36636520-abe3-4777-8a78-9c1b19b2b1fa")]
+        public partial class RxTabIntroductionFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _enteryournameInfo;
+            RepoItemInfo _btnsubmitusernameInfo;
+            RepoItemInfo _resetInfo;
+
+            /// <summary>
+            /// Creates a new RxTabIntroduction  folder.
+            /// </summary>
+            public RxTabIntroductionFolder(RepoGenBaseFolder parentFolder) :
+                    base("RxTabIntroduction", "?/?/tabpage[@controlname='RxTabIntroduction']", parentFolder, 30000, null, false, "36636520-abe3-4777-8a78-9c1b19b2b1fa", "")
+            {
+                _enteryournameInfo = new RepoItemInfo(this, "EnterYourName", "?/?/text[@accessiblename='Enter your name']", 30000, null, "f4845429-8b37-4a49-abfa-c9d03d273d1b");
+                _btnsubmitusernameInfo = new RepoItemInfo(this, "BtnSubmitUserName", "button[@controlname='btnSubmitUserName']", 30000, null, "753a90ab-b756-461a-8589-241b65e7cf06");
+                _resetInfo = new RepoItemInfo(this, "Reset", "link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']", 30000, null, "3ba56af5-34b7-45aa-93c6-bc638a01a991");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("36636520-abe3-4777-8a78-9c1b19b2b1fa")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("36636520-abe3-4777-8a78-9c1b19b2b1fa")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterYourName item.
+            /// </summary>
+            [RepositoryItem("f4845429-8b37-4a49-abfa-c9d03d273d1b")]
+            public virtual Ranorex.Text EnterYourName
+            {
+                get
+                {
+                    return _enteryournameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterYourName item info.
+            /// </summary>
+            [RepositoryItemInfo("f4845429-8b37-4a49-abfa-c9d03d273d1b")]
+            public virtual RepoItemInfo EnterYourNameInfo
+            {
+                get
+                {
+                    return _enteryournameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnSubmitUserName item.
+            /// </summary>
+            [RepositoryItem("753a90ab-b756-461a-8589-241b65e7cf06")]
+            public virtual Ranorex.Button BtnSubmitUserName
+            {
+                get
+                {
+                    return _btnsubmitusernameInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnSubmitUserName item info.
+            /// </summary>
+            [RepositoryItemInfo("753a90ab-b756-461a-8589-241b65e7cf06")]
+            public virtual RepoItemInfo BtnSubmitUserNameInfo
+            {
+                get
+                {
+                    return _btnsubmitusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Reset item.
+            /// </summary>
+            [RepositoryItem("3ba56af5-34b7-45aa-93c6-bc638a01a991")]
+            public virtual Ranorex.Link Reset
+            {
+                get
+                {
+                    return _resetInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Reset item info.
+            /// </summary>
+            [RepositoryItemInfo("3ba56af5-34b7-45aa-93c6-bc638a01a991")]
+            public virtual RepoItemInfo ResetInfo
+            {
+                get
+                {
+                    return _resetInfo;
                 }
             }
         }

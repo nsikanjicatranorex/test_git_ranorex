@@ -1,38 +1,83 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="MyTestSourceControlRepository"
+﻿<repository
 id="b7137de4-6ecf-4e33-a060-48816af95187"
+name="MyTestSourceControlRepository"
 rxversion="9.0">
-  <codegen
-  classname="MyTestSourceControlRepository"
-  namespace="MyTestSourceControl"/>
-  <rootfolder
-  name="Root"
-  id="b61f8183-e443-458b-bfbb-ba758b49b021"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-      <appfolder
-          addcaps="form,nativewindow"
-          capname="form"
-          id="f9f4e0a2-5564-4a48-8acd-5e54cb9321a2"
-          isrooted="True"
-          name="ApplicationUnderTest"
-          searchtimeout="30000ms"
-          usecache="True">
-          <basepath>
-              /form[@processname='RxDemoApp']
-          </basepath>
-          <icon>
-              iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+	<codegen
+	classname="MyTestSourceControlRepository"
+	namespace="MyTestSourceControl">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="b61f8183-e443-458b-bfbb-ba758b49b021"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="f9f4e0a2-5564-4a48-8acd-5e54cb9321a2"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="36636520-abe3-4777-8a78-9c1b19b2b1fa"
+			isrooted="True"
+			name="RxTabIntroduction"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabIntroduction']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="f4845429-8b37-4a49-abfa-c9d03d273d1b"
+				name="EnterYourName"
+				refimgid="7581bfb7-f518-4adf-acad-edb98c05493f"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/text[@controlname='txtUserName']/text[@accessiblename='Enter your name']"
+				searchtimeout="30000ms">
+					/form[@processname='RxDemoApp']/?/?/tabpage[@controlname='RxTabIntroduction']/?/?/text[@accessiblename='Enter your name']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="753a90ab-b756-461a-8589-241b65e7cf06"
+				name="BtnSubmitUserName"
+				refimgid="0d9d3bb6-2357-4660-8ad6-6c8e8a853479"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/button[@controlname='btnSubmitUserName']"
+				searchtimeout="30000ms">
+					/form[@processname='RxDemoApp']/?/?/tabpage[@controlname='RxTabIntroduction']/button[@controlname='btnSubmitUserName']
+				</item>
+				<item
+				addcaps="link,accessible"
+				capname="link"
+				id="3ba56af5-34b7-45aa-93c6-bc638a01a991"
+				name="Reset"
+				refimgid="d628c856-184a-46c5-9a4e-e6f865210588"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/link/text/link[@accessiblename='Reset']"
+				searchtimeout="30000ms">
+					/form[@processname='RxDemoApp']/?/?/tabpage[@controlname='RxTabIntroduction']/link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']
+				</item>
+				<basepath>
+					/form[@processname='RxDemoApp']/?/?/tabpage[@controlname='RxTabIntroduction']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@processname='RxDemoApp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAB9SURBVDhPY0AGwcHBi4D4NxD/x4NB8r+DgoJa
 odogACj4BqQAyiUdwDQ/YBfa+oBN6CA+DNaADmAGAAlGIGbCh8Ea0AHIACD+B8RficFQbQgAFAQa
 TjwABuI3KBMCSDEgICBAeNSAUQOwGgACIEOAEt8JYaC6H0AaaAADAwC5s5VutWbaWgAAAABJRU5E
 rkJggg==
-          </icon>
-      </appfolder>
-      <basepath/>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>
