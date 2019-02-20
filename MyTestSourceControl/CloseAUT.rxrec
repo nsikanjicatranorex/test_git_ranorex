@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="472bf6a1-0976-4361-a45b-458b057bf03a"
+mode="Desktop"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="MyTestSourceControl">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="77ab8e31-b266-4d1a-a0e2-694d39f3d3e3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f9f4e0a2-5564-4a48-8acd-5e54cb9321a2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='RxDemoApp']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="b7137de4-6ecf-4e33-a060-48816af95187"
+	name="MyTestSourceControlRepository"
+	relativepath="MyTestSourceControlRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="MyTestSourceControlRepository"
+		namespace="MyTestSourceControl">
+		</codegen>
+		<rootfolder
+		id="b61f8183-e443-458b-bfbb-ba758b49b021"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="636d4bb1-f8b5-42ae-b6f2-457f22482371"
+mode="Desktop"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="MyTestSourceControl">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="b7137de4-6ecf-4e33-a060-48816af95187"
+	name="MyTestSourceControlRepository"
+	relativepath="MyTestSourceControlRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="MyTestSourceControlRepository"
+		namespace="MyTestSourceControl">
+		</codegen>
+		<rootfolder
+		id="b61f8183-e443-458b-bfbb-ba758b49b021"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

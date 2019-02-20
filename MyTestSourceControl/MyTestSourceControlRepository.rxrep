@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="MyTestSourceControlRepository"
+id="b7137de4-6ecf-4e33-a060-48816af95187"
+rxversion="9.0">
+  <codegen
+  classname="MyTestSourceControlRepository"
+  namespace="MyTestSourceControl"/>
+  <rootfolder
+  name="Root"
+  id="b61f8183-e443-458b-bfbb-ba758b49b021"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+      <appfolder
+          addcaps="form,nativewindow"
+          capname="form"
+          id="f9f4e0a2-5564-4a48-8acd-5e54cb9321a2"
+          isrooted="True"
+          name="ApplicationUnderTest"
+          searchtimeout="30000ms"
+          usecache="True">
+          <basepath>
+              /form[@processname='RxDemoApp']
+          </basepath>
+          <icon>
+              iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAB9SURBVDhPY0AGwcHBi4D4NxD/x4NB8r+DgoJa
+odogACj4BqQAyiUdwDQ/YBfa+oBN6CA+DNaADmAGAAlGIGbCh8Ea0AHIACD+B8RficFQbQgAFAQa
+TjwABuI3KBMCSDEgICBAeNSAUQOwGgACIEOAEt8JYaC6H0AaaAADAwC5s5VutWbaWgAAAABJRU5E
+rkJggg==
+          </icon>
+      </appfolder>
+      <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
