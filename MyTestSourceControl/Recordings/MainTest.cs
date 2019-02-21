@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace MyTestSourceControl
+namespace MyTestSourceControl.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The MainTest recording.
     /// </summary>
     [TestModule("636d4bb1-f8b5-42ae-b6f2-457f22482371", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class MainTest : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the MyTestSourceControlRepository repository.
+        /// Holds an instance of the global::MyTestSourceControl.MyTestSourceControlRepository repository.
         /// </summary>
-        public static MyTestSourceControlRepository repo = MyTestSourceControlRepository.Instance;
+        public static global::MyTestSourceControl.MyTestSourceControlRepository repo = global::MyTestSourceControl.MyTestSourceControlRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static MainTest instance = new MainTest();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public MainTest()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static MainTest Instance
         {
             get { return instance; }
         }

@@ -141,17 +141,17 @@
     <Compile Include="Program.cs">
       <id>d1140106-b4b1-47a7-b372-645ed3d5fb58</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>4bd9dfd4-dbb0-403d-a506-22e286c69b49</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recordings\MainTest.cs">
+      <DependentUpon>MainTest.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>dc9a93ac-71a7-4634-8d15-2489a3d1dd6b</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
       <BoundTo>4bd9dfd4-dbb0-403d-a506-22e286c69b49</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    </Compile>
+    <Compile Include="Recordings\MainTest.UserCode.cs">
+      <DependentUpon>MainTest.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>37677b07-bb36-4a00-901d-1c9f633eed83</id>
+      <BoundTo>4bd9dfd4-dbb0-403d-a506-22e286c69b49</BoundTo>
     </Compile>
     <Compile Include="StartAUT.cs">
       <BoundTo>a1d112bb-8403-4c7b-bb5f-c6e36e0af27f</BoundTo>
@@ -186,7 +186,7 @@
       <repoid>b7137de4-6ecf-4e33-a060-48816af95187</repoid>
       <reporootid>b61f8183-e443-458b-bfbb-ba758b49b021</reporootid>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="Recordings\MainTest.rxrec">
       <BoundTo>0ee8d386-7061-4695-8f4e-a00da7d1a177</BoundTo>
       <id>4bd9dfd4-dbb0-403d-a506-22e286c69b49</id>
       <recordtableid>636d4bb1-f8b5-42ae-b6f2-457f22482371</recordtableid>
@@ -206,6 +206,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>21e6689f-7252-4553-98ef-806db1049058</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>d0c89abd-56dd-49de-8c51-caa16045312e</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

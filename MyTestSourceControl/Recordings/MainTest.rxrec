@@ -20,8 +20,8 @@ rxversion="9.0">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
-	namespace="MyTestSourceControl">
+	classname="MainTest"
+	namespace="MyTestSourceControl.Recordings">
 	</codegen>
 	<variables>
 	</variables>
@@ -2707,7 +2707,7 @@ FH+zIqlgs1gfchqzRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 	<repository
 	id="b7137de4-6ecf-4e33-a060-48816af95187"
 	name="MyTestSourceControlRepository"
-	relativepath="MyTestSourceControlRepository.rxrep"
+	relativepath="..\MyTestSourceControlRepository.rxrep"
 	rxversion="9.0">
 		<codegen
 		classname="MyTestSourceControlRepository"
@@ -2720,7 +2720,7 @@ FH+zIqlgs1gfchqzRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		MainTest.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
