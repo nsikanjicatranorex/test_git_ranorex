@@ -4,12 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Ranorex Studio 9.0
 VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestSourceControl", "MyTestSourceControl\MyTestSourceControl.csproj", "{C5FFD58B-C856-425C-9B2E-31E4C05BD2FC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EE839C5-334A-44BA-8377-4EE20B2EEC3D}"
 	ProjectSection(SolutionItems) = postProject
 		Ranorex = .\Ranorex.rxsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestSourceControl", "MyTestSourceControl\MyTestSourceControl.csproj", "{C5FFD58B-C856-425C-9B2E-31E4C05BD2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
